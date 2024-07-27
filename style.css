@@ -1,0 +1,260 @@
+* {
+    font-family: 'Inter Tight';
+    margin: 0%;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    filter: noise;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+#noise-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+:root {
+    --color1: red;
+    --color2: rgb(255, 123, 0);
+    --color3: yellow;
+    --color4: green;
+    --color5: rgb(0, 102, 255);
+    --color6: purple;
+    --color7: red;
+}
+
+@keyframes animation {
+    0%
+        { fill: var(--color1)}
+    10%
+        { fill: var(--color2)}
+    25%
+        { fill: var(--color3)}
+    50%
+        { fill: var(--color4)}
+    75%
+        { fill: var(--color5)}
+    90%
+        { fill: var(--color6)}
+    100%
+        { fill: var(--color7)}
+}
+
+svg.svg1 {
+    z-index: -999;
+    position: absolute;
+    padding-left: 30%;
+    filter: blur(150px);
+}
+
+svg.svg2 {
+    z-index: -999;
+    position: absolute;
+    margin-left: 25%;
+    filter: blur(100px);
+}
+
+svg.svg3 {
+    z-index: -999;
+    position: absolute;
+    filter: blur(100px);
+    margin-top: 40%;
+}
+
+svg.svg4 {
+    z-index: -999;
+    position: absolute;
+    filter: blur(50px);
+    margin-top: 80%;
+    margin-left: 60%;
+}
+
+svg.svg1 circle {
+    animation: animation 3s infinite;
+}
+
+img.cat {
+    position: absolute;
+    z-index: -999;
+    margin-top: 120%;
+    margin-left: 40%;
+    padding: -30%;
+}
+
+.navbar {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-decoration-style: none;
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+    
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter Tight';
+    font-size: 30px;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+.content {
+    color:white;
+    padding-left: 10%;
+    padding-top: 10%;
+    font-family: 'Inter Tight';
+    font-size: larger;
+    padding-right: 50%;
+}
+
+.content h1 {
+    font-size: 72px;
+    display: flex;
+    position: relative;
+}
+
+.content.p {
+    display: flex;
+    position: relative;
+}
+
+button {
+    all: unset;
+    font-family: 'Inter Tight';
+    font-size: small;
+    font-weight: 200;
+    color: white;
+    padding: 10px;
+    padding-left: 3%; padding-right: 3%;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 30px;
+    margin-top: 3%;
+    transition: 200ms;
+}
+
+button.b {
+    background-color: rgb(0,0,0,0);
+    border: 0.2px solid rgba(255, 255, 255, 0.164);
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(20, 20, 20);
+    font-weight: 500;
+    transition: 200ms;
+    box-shadow: 0px 4px 60px rgba(255, 255, 255, 0.233);
+}
+
+#cursor-follower {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.411);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 100ms;
+}
+
+.content2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.082), rgba(255, 255, 255, 0.219));
+    transition: 200ms;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    color: white;
+    transition: 200ms;
+}
+
+.content2:hover {
+    box-shadow: 0px 10px 120px rgba(255, 255, 255, 0.123);
+    background-color: rgba(255, 255, 255, 0.068);
+    transition: 200ms;
+}
+
+.card {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.midtext {
+    font-size: larger;
+    color: white;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.footer {
+    display: block;
+    justify-content: end;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 5%;
+}
+
+.footer h1 {
+    font-family: 'Chakra Petch';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer:hover {
+    background: linear-gradient(180deg, rgb(19, 19, 19), rgb(32, 32, 32));
+    box-shadow: 0px 10px 120px rgba(255, 255, 255, 0.123);
+    transition: 500ms;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.carda {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.082), rgba(255, 255, 255, 0.219));
+    transition: 200ms;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    color: white;
+    transition: 200ms; 
+    padding: 9%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin: 15%;
+    margin-top: -5%;
+}
+
+.carda:hover {
+    box-shadow: 0px 10px 120px rgba(255, 255, 255, 0.123);
+    background-color: rgba(255, 255, 255, 0.068);
+    transition: 200ms;
+}
+
+.lasttext {
+    justify-content: center;
+    color: white;
+    font-size: larger;
+    margin: 20%;
+}
